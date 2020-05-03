@@ -34,7 +34,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="Sanbar SpA"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -49,10 +49,9 @@ export default function LandingPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Your Story Starts With Us.</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+              Empresa joven, innovación, metodologías ágiles, tecnología RFID,
+              automatización de procesos, visibilización de KPIs, Desarrollo 
+              móvil híbrido (iOS, Android), IoT, Aplicaciones web.
               </h4>
               <br />
               <Button

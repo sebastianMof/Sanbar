@@ -23,11 +23,9 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Let{"'"}s talk product</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          Empresa joven, innovación, metodologías ágiles, tecnología RFID,
+          automatización de procesos, visibilización de KPIs, Desarrollo 
+          móvil híbrido (iOS, Android), IoT, Aplicaciones web.
           </h5>
         </GridItem>
       </GridContainer>
