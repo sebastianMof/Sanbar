@@ -43,11 +43,11 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+      <Parallax filter image={require("assets/img/unsplash/TI/kaleidico-26MJGnCM0Wc-unsplash.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>Fortalece tu empresa.</h1>
               <h4>
               Empresa joven, innovación, metodologías ágiles, tecnología RFID,
               automatización de procesos, visibilización de KPIs, Desarrollo 
@@ -57,12 +57,12 @@ export default function LandingPage(props) {
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.youtube.com/watch?v=1z75c6e9okE"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-play" />
-                Watch video
+                Conócenos
               </Button>
             </GridItem>
           </GridContainer>
