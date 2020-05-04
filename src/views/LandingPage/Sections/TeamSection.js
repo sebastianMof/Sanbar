@@ -56,14 +56,6 @@ export default function TeamSection() {
                   justIcon
                   color="transparent"
                   className={classes.margin5}
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
                 >
                   <i className={classes.socials + " fab fa-instagram"} />
                 </Button>

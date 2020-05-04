@@ -28,6 +28,18 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+
+      <ListItem className={classes.listItem}> 
+        <Link to='/somewhere' className={classes.listItem}>
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}>
+            Inicio
+          </Button>
+        </Link>
+      </ListItem>
+
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -38,50 +50,66 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Business}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/consultoria" className={classes.dropdownLink}>
               Consultoria
             </Link>,
-            <a
-              href="https://www.youtube.com/watch?v=o5fsi3e3tww"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Hosting
-            </a>
+            <Link to="/asesorias" className={classes.dropdownLink}>
+              Asesorías
+            </Link>
           ]}
         />
       </ListItem>
+
       <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.youtube.com/watch?v=o5fsi3e3tww"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-  
-        >
-          <Work className={classes.icons} /> Bolsa de trabajo
-        </Button>
+        <Link to='/bolsadetrabajo' className={classes.listItem}>
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}>
+            <Work className={classes.icons} /> Bolsa de trabajo
+          </Button>
+        </Link>
       </ListItem>
-      
-      
-   
+
+      <ListItem className={classes.listItem}> 
+        <Link to='/nosotros' className={classes.listItem}>
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}>
+            Nosotros
+          </Button>
+        </Link>
+      </ListItem>
+
+      <ListItem className={classes.listItem}> 
+        <Link to='/contacto' className={classes.listItem}>
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}>
+            Contacto
+          </Button>
+        </Link>
+      </ListItem>
+
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow us on instagram"
+          title="Siguenos en instagram"
           placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
+          classes={{ tooltip: classes.tooltip }}>
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.instagram.com/alpacasofinstagram"
             target="_blank"
-            className={classes.navLink}
-          >
+            className={classes.navLink}>
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
       </ListItem>
+      
+    
     </List>
   );
 }
