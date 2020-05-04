@@ -22,7 +22,7 @@ import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
-const dashboardRoutes = [];
+const dashboardRoutes = ["/1","/2"];
 
 const useStyles = makeStyles(styles);
 
@@ -41,8 +41,8 @@ export default function LandingPage(props) {
           height: 400,
           color: "white"
         }}
-        {...rest}
-      />
+        {...rest}/>
+
       <Parallax filter image={require("assets/img/unsplash/TI/kaleidico-26MJGnCM0Wc-unsplash.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -68,6 +68,7 @@ export default function LandingPage(props) {
           </GridContainer>
         </div>
       </Parallax>
+      
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
@@ -75,7 +76,9 @@ export default function LandingPage(props) {
           <WorkSection />
         </div>
       </div>
+      
       <Footer />
+    
     </div>
   );
 }
